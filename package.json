@@ -1,0 +1,21 @@
+{
+  "name": "campus-connect",
+  "version": "1.0.0",
+  "description": "Web Application, which is used to store the details of the students of NMAMIT. Who are placed in the company to get their details.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "keywords": [
+    "Shashank"
+  ],
+  "author": "Shashank S Shetty",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mysql": "^2.14.1"
+  }
+}

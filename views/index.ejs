@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campus Connect</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Boostrap JS and jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Angular Js -->
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-route.min.js"></script>
+
+    <!-- Angular Js Route -->
+    <script src="/js/route.js"></script>
+
+    <!-- Angular Js Controllers -->
+    <script src="/js/controller/registerController.js"></script>
+    <script src="/js/controller/showUsersController.js"></script>
+    <script src="/js/controller/homeController.js"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="/css/animate.css">
+
+    <!-- Scroll Reveal -->
+    <script src="/js/scrollreveal.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+        <a class="navbar-brand" href="#">Campus Connect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/createDB">Create Database</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/formUser">Create Form Table</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#!showUsers">Show Users</a>
+                </li>
+                <li class="nav-item d-flex justify">
+                    <a class="nav-link" href="#!register">Register</a>
+                </li>
+            </ul>
+            <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <li class="nav-item">
+                    <a href="#!register" class="nav-link">Register</a>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+    
+    <!-- Router boilerplate -->
+    <div class="ng-view"></div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <!-- FAQ -->
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <!-- Copyright -->
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <!-- details about the designers -->
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-end justify-content-center align-self-end">
+            <div class="footer-desc p-0">
+                <p class="text-center small pt-2"><span class="h5 pr-3 mr-3">Website is designed using</span>Node Js - Backend, EJS - Templete Engine, Angular Js - Frontend, Bootstrap - Framework</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        $(document).ready(function(){
+            window.sr = ScrollReveal();
+            sr.reveal('footer', {
+                origin : 'top',
+                viewFactor: 0.2,
+                distance : '10px',
+                duration : '3000',
+                delay: '200'
+            });
+        });
+    </script> -->
+</body>
+</html>

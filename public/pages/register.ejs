@@ -1,0 +1,46 @@
+<div class="container v-header">
+    <div class="fullscreen-video-wrap">
+        <video src="/video/Typing_light_01_Videvo.mov" autoplay="true" loop="true"></video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="row body-content">
+        <div class="col-lg-6 col-md-12 col-sm-12 hidden-md">
+            <h2 class="m-4 p-5">Please Register here to to get connected with us.</h2>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1 class="header-title my-2 py-2">Register Here</h1>
+            <form action="/addUser" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" ng-model="name">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Enter your password" ng-model="pass">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email ID" ng-model="email">
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-outline-success btn-block" type="button" value="Submit" ng-click="RegisterUsers()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        window.sr = ScrollReveal();
+        sr.reveal('h1', {
+            origin : 'left',
+            distance : '300px',
+            duration : '1000',
+            delay: '200'
+        });
+        sr.reveal('table', {
+            origin : 'bottom',
+            distance : '100px',
+            duration : '2000',
+            delay : '500'
+        });
+    });
+</script>
