@@ -8,7 +8,7 @@
             <h2 class="m-4 p-5">Please Register here to to get connected with us.</h2>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-            <h1 class="header-title my-2 py-2">Register Here</h1>
+            <h1 id="RegisterText" class="header-title my-2 py-2">Register Here</h1>
             <form action="/addUser" method="post">
                 <div class="form-group">
                     <input class="form-control" type="text" name="name" id="name" placeholder="Enter Your Name" ng-model="name">
@@ -30,17 +30,17 @@
 <script>
     $(document).ready(function(){
         window.sr = ScrollReveal();
-        sr.reveal('h1', {
+        sr.reveal('h2', {
             origin : 'left',
             distance : '300px',
             duration : '1000',
-            delay: '200'
-        });
-        sr.reveal('table', {
-            origin : 'bottom',
-            distance : '100px',
-            duration : '2000',
-            delay : '500'
-        });
+            delay : '200'
+        })
+        sr.reveal('#RegisterText', {
+            origin : 'top',
+            distance : '300px',
+            duration : '1000',
+            delay : '400'
+        })
     });
 </script>
