@@ -14,5 +14,9 @@ app.config(function($routeProvider) {
     .when('/showUsers', {
         templateUrl : 'pages/showUsers.ejs',
         controller : 'showUsersController'
+    })
+    
+    .otherwise({
+        templateUrl : 'pages/home.ejs'
     });
 });

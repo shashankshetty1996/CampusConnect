@@ -112,6 +112,25 @@ app.get('/', function(req,res) {
     res.render("index");
 });
 
+
+// Error handing
+app.get('*', function(req, res, next) {
+    var err = new Error();
+    err.status = 404;
+    next(err);
+});
+
+// handling 404 errors
+app.use(function(err, req, res, next) {
+    if(err.status !== 404) {
+        return next();
+    }
+    res.render("error", {
+        err : err.message
+    });
+    // res.send(err.message || '** no unicorns here **');
+});
+
 app.listen(4000, function(){
     console.log("Server Started in port 4000");
 });
